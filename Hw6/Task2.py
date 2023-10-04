@@ -11,14 +11,3 @@ for element in message_list:
     else: my_count = 0
 if my_count !=3:
     print(f'Your message "{message}" doesn\'t have 3 words one by one')
-
-
-
-
-
-
-
-
-
-
-
