@@ -11,4 +11,3 @@ elif play_number >= 7:
     print(f'a prediction for the day: {ans_1}')
 elif play_number <= 0:
     print(f'The number {play_number} is not valid.')
-    
