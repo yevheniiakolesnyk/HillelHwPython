@@ -3,7 +3,6 @@ entered_key = input('Enter any key:')
 
 try:
     ans = course[f'{entered_key}']
-    # print(ans)
 except KeyError:
     print(f'"{entered_key}" not found in the dictionary')
 else:
