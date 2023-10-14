@@ -10,7 +10,3 @@ else:
     print(ans)
 finally:
     print('test is continues')
-
-
-
-
