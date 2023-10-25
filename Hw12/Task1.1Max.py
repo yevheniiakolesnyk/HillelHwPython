@@ -1,3 +1,12 @@
+def logger(func):
+    def wrapper(*args):
+        print(f"Feature name: {func.__name__}")
+        result = func(*args)
+        return result
+    return wrapper
+
+
+@logger
 def max_own(*args, list_own=[]):
     list_own.append(args)
 
@@ -13,13 +22,3 @@ def max_own(*args, list_own=[]):
 
 
 print(max_own(4, 8, 9, 1, 12, 88, 17, 77, 177))
-
-def logger(func):
-    def wrapper():
-        result = func.__name__
-        return result
-
-    return wrapper()
-
-
-print(logger(max_own))
