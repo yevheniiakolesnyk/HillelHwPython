@@ -20,9 +20,6 @@ class Predators(Mammals):
         targ = self.new_population / 12
         return targ
 
-    def my_method(self):
-        self._target_population_per_month()
-
     def schedule_slippage(self, pessimistic_population):
         return self._target_population_per_month() - pessimistic_population
 
