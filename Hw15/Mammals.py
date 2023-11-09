@@ -7,9 +7,6 @@ class Mammals(Animals):
         super().__init__(name, place_living, population, program_name)
         self._meal = 'Mushrooms'
 
-    def my_method(self):
-        pass
-
     def program_name(self):
         return self._program_name
 
