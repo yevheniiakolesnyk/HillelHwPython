@@ -1,17 +1,11 @@
-from abc import ABC, abstractmethod
-
-class Animals(ABC):
+class Animals:
 
     def __init__(self, name: str, place_living: str, population: int, program_name: str):
         self.name = name
         self._place_living = place_living
         self.__population = population
         self._program_name = program_name
-
-
-    @abstractmethod
-    def my_method(self):
-        pass
+        
 
     def __repr__(self):
         return f'{self.name} live in {self.place_living} in population of {self.__population}'
@@ -43,10 +37,10 @@ class Animals(ABC):
             return self.__population
 
 
-# birds = Animals('Calibri', 'Savanna', 1000, 'Save animals')
-# print(birds)
-# print(birds.target_year_population(250))
-# print(birds.get_place_living('box1'))
-# print(birds.place_living)
-# birds.program_name = 'Wood'
-# print(birds.program_name)
+birds = Animals('Calibri', 'Savanna', 1000, 'Save animals')
+print(birds)
+print(birds.target_year_population(250))
+print(birds.get_place_living('box1'))
+print(birds.place_living)
+birds.program_name = 'Wood'
+print(birds.program_name)
