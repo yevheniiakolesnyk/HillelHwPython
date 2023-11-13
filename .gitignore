@@ -1,5 +1,2 @@
 .idea/
 .venv/
-.pytest_cache/
-.pytest.ini/
-requirements.txt/
