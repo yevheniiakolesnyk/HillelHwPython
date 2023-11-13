@@ -20,4 +20,6 @@ def min_own(*args, list_own=[]):
     return result
 
 
+
+print(min_own(4, 8, 9, 1, 12, 88, 17, 77))
 print(min_own(4, 8, 9, 1, 12, 88, 17, 77))
