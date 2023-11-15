@@ -15,3 +15,8 @@ def division(a, b):
         raise ZeroDivisionError('Division by zero is not allowed')
     else:
         return int(a / b)
+
+
+def square(a):
+    return a ** 2
+    
